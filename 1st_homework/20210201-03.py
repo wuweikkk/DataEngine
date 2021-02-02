@@ -1,7 +1,7 @@
 
 import pandas as pd
 # 数据加载
-df=pd.read_csv(r'D:\Phython\Phython\L1\L1\car_data_analyze\car_complain.csv')
+df=pd.read_csv(r'car_complain.csv')
 # 数据预处理
 df=df.drop('problem',axis=1).join(df.problem.str.get_dummies(','))
 # 数据清洗
